@@ -17,7 +17,7 @@ class TodoItem extends Component {
             <div  className={classNames(className, {
                 'TodoItem-Complete': item.isComplete
             })}>
-                <img onClick={onClick} src={url}/>
+                <img onClick={onClick} src={url} alt="CheckBox item"/>
                 <p>{item.title}</p>
             </div>
         )

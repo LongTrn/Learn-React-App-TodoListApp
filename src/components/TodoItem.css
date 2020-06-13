@@ -1,8 +1,4 @@
 .TodoItem {
-    font-family: 'Helvetica Neue',
-    Arial, 
-    Helvetica, 
-    sans-serif;
     display: flex;
     font-size: 32;
     font-weight: 300;
