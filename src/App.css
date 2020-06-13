@@ -1,4 +1,8 @@
 .App {
+    font-family: 'Helvetica Neue',
+    Arial, 
+    Helvetica, 
+    sans-serif; 
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -6,6 +10,7 @@
 }
 
 .Header {
+    display: flex;
     border-bottom: inherit;
 }
 
@@ -13,4 +18,14 @@
     width: 32px;
     height: 32px;
     margin: 10px;
+}
+
+.Header > input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.Header > input:focus {
+    outline: none;
 }
