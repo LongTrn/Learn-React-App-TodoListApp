@@ -29,3 +29,31 @@
 .Header > input:focus {
     outline: none;
 }
+
+.Footer {
+    display: flex;
+    padding: 10px;
+}
+
+.Footer > .currentItems{
+    /* padding: auto; */
+    width: 25%;
+}
+
+.Footer > .currentStates{
+    height: 40px;
+    margin: auto;
+    display: flex;
+}
+
+.Footer > .currentStates > input{
+    width: 80px;
+    margin: auto;
+    border: none;
+    background-color: inherit;
+}
+
+.Footer > .currentStates > input:focus{
+    outline: none;
+    border: 2px solid cyan;
+}
