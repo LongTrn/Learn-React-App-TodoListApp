@@ -93,24 +93,13 @@ class App extends Component {
 
   loadItembyState(todoItems, currentState) {
     return todoItems.length > 0 && todoItems.map((item, index) => {
-      // filter khoi map luôn đúng không ông\
-    
-      // nhưng ma khỏ cái là nó return về value thôi chứ ko như map nó làm cái này luôn đc getContents
-      // ko dung filter ua dùng for đi :)))
-      //thấy map này nó cũng được mà 
-      //ủa tuỏng ông muốn bỏ dòng if cuối :vậy
-      // thi đúng tui định là chỉ so sánh thằng state nó là gì néu không nằm trong trường hợp là active hay completed thi luon return all ý 
-      // kiểu tui hiểu. nhưng mà thôi đừng làm vậy
-      // tui thử dung arrow này thử
       if(currentState ==='active' && !item.isComplete){
         return this.getContents(item, index)
       } else if (currentState === 'completed' && item.isComplete) {
         return this.getContents(item, index)
       } else if (currentState === 'all') {
         return this.getContents(item, index)
-      } else return '' //phai giu dong nay lai
-      //van giu như nay chu ko map no tra ve het,
-      // à tui hiểu để tui chỉnh sao để tránh trường hợp sai luôn cái 
+      } else return ''
       
     }) 
   }
