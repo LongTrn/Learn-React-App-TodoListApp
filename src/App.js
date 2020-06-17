@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import TodoItem from './components/TodoItem';
 
 import './App.css';
@@ -11,9 +12,6 @@ class App extends Component {
     this.state = {
       newItem: '',
       currentState: 'all',
-      // currentState: 'active',
-      // currentState: 'completed',
-      //à ok :)))
       todoItems: [
         {title:'Đi chơi', isComplete: true},
         {title:'Đi học', isComplete: true},
