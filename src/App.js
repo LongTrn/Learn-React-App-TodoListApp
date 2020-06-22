@@ -104,7 +104,6 @@ class App extends Component {
 
   render() {
     const { todoItems, newItem, currentState } = this.state;
-    let contents;
     
     if (todoItems.length) {
       return (
